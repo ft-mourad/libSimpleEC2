@@ -17,9 +17,8 @@ func ListInstances(svc *ec2.EC2) ([]SimpleInstance, []string) {
 
 	//fmt.Println(resp)
 	instances, iids := indexResult(resp)
-	fmt.Println(iids)
+	// fmt.Println(iids)
 	return instances, iids
-
 }
 
 func StartInstance(svc *ec2.EC2, iid string) {
